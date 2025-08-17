@@ -1,0 +1,39 @@
+1) Prisma => ORM for js & ts
+        => simplifies dB intercations => initutive and type-safe API
+2) ORM => tool to work with db's with regular code instead of writing SQL 
+        Ex: SELECT * FROM users WHERE id = 1; rather then go with
+            const user = await prisma.user.findUnique({where: {id: 1}}); // Prsima API act in your app to retrieve data
+3) Why its Useful ORM's
+    Easier => read & wright in same language(like js)
+    Safer => prevents mistakes like SQL injection
+    Faster Development => For Repetive CRUD operations 
+    Clear Models => u define data into code => easy to see structure of dB
+4) Y Prisma not OTHER ORM's
+    type-safety, performance, community
+5) install prisma, @prisma/client
+    prisma => library for prisma databases, actual ORM
+    @prisma/client => to access prisma in code
+    npx prisma init => to create Schema files 
+    prisma extenstion => to get highlited code
+    Go and get URl from neon/ something else
+6) Prisma Schema =>  where we define MODELs, relationships, configrations
+7) Parts/ Terminologies in Prisma => generators, datasource, MODEL
+8)  npx prisma migrate environment_name --name name_of_migration
+        Ex: npx prisma migrate dev --name init
+    npx prisma generate
+9) Create new User
+10) Populate Data => create Prisma Key + npx prisma db name_of_key(seed)
+
+
+
+Summary:
+1) Prisma
+2) ORM
+3) Why its Useful ORM's
+4) Y Prisma not OTHER ORM's
+5) install prisma, @prisma/client
+6) Prisma Schema
+7) Parts/ Terminologies in Prisma
+8) Commands
+9) Create new User
+10) Populate Data
